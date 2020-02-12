@@ -611,8 +611,8 @@ pre code {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: 15px;
-  background-color: gray;
+  margin-left: -15px;
+  background-color: red;
 }
 
 .no-gutters {
