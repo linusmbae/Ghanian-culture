@@ -10,3 +10,12 @@ body
   font-size: 36px;
   border: 2px solid #4CAF50;
 }
+.results
+{
+  margin-left: 400px;
+  margin-top: 25px;
+}
+.jumbotron form
+{
+  margin-top: -50px;
+}
