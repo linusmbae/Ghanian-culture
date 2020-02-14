@@ -12,10 +12,42 @@ body
 }
 .results
 {
-  margin-left: 400px;
-  margin-top: 25px;
+  margin-left: 800px;
+  margin-top: -220px;
+  border: solid #D4AF37;
+  border-radius: 5px;
 }
 .jumbotron form
 {
   margin-top: -50px;
+}
+.row form
+{
+  margin-left: 390px;
+}
+h5
+{
+    margin-left: 390px;
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+.Gender form
+{
+  margin-top: 0px;
+  margin-left: 80px;
+}
+.Gender button
+{
+  margin-top: 30px;
+}
+.Gender h5
+{
+  margin-left: 60px;
+  margin-top: -170px;
+}
+#submit
+{
+  margin-left: 300px;
+  margin-top: 150px;
 }
