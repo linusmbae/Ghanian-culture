@@ -16,6 +16,7 @@ body
   margin-top: -220px;
   border: solid #D4AF37;
   border-radius: 5px;
+  text-align: center;
 }
 .jumbotron form
 {
@@ -51,4 +52,8 @@ h5
 {
   margin-left: 300px;
   margin-top: 150px;
+}
+.row p
+{
+  color: red;
 }

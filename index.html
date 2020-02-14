@@ -5,11 +5,13 @@
     <title>Ghanian-culture</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+      <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body background="images/sunset.jpg">
 
 
       <div class="container">
+
         <div class="jumbotron">
           <div class="navbar navbar-default">
             <ul>
@@ -24,19 +26,21 @@
           <div class="row">
             <form>
               <label for="Day">Day</label><br>
-              <input type="text" id="Day" name="Day"><br>
+              <input type="number" id="siku" name="Day" min="1" max="31" required><br>
+              <p id="dvalidity"></p>
               <label for="Month">Month</label><br>
-              <input type="text" id="Month" name="Month"><br>
-              <label for="cc">Century(eg 19...,20...)</label><br>
-              <input type="text" id="cc" name="cc"><br>
-              <label for="year">year(eg ...96,...98)</label><br>
-              <input type="text" id="year" name="year">
+              <input type="number" id="Month" name="Month" min="1" max="12" required><br>
+              <p id="mvalidity"></p>
+              <label for="cc">Century(eg <strong>19</strong> ...,<strong>20</strong>...)</label><br>
+              <input type="number" id="cc" name="cc" min="0" required><br>
+              <label for="year">Year(eg ... <strong>96</strong>,...<strong>98</strong>)</label><br>
+              <input type="number" id="year" name="year" min="0" required>
             </form>
           </div>
               <br>
 
               <div class="results">
-                <p id="print_names_here">Possible day</p>
+                <p id="print_day_here">Possible day</p>
                 <hr>
                 <p id="print_names_here">Possible Name</p>
               </div>
@@ -45,7 +49,7 @@
                       <h5>Select Gender</h5>
                       <form>
                 <div class="radio">
-                  <label><input type="radio" name="optradio" checked>Male</label>
+                  <label><input type="radio" name="optradio">Male</label>
                 </div>
                 <div class="radio">
                   <label><input type="radio" name="optradio">Female</label>
@@ -54,8 +58,9 @@
                   <label><input type="radio" name="optradio">Others</label>
                 </div>
                 <br>
-                <button onclick="submit()" type="button" name="button">Submit</button>
+
               </form>
+                <button onclick="myFunction()">Submit</button>
                     </div>
         </div>
     </div>
