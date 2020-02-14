@@ -6,6 +6,8 @@ function myFunction() {
   let showcc=document.getElementById("cc");
   let showyear=document.getElementById("year");
   let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  let males = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+  let females = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
   if (!showday.checkValidity())
    {
