@@ -22,21 +22,7 @@
           </div>
           <hr>
 
-          <h5>Provide Birthday</h5><br><br><br>
-          <div class="row">
-            <form>
-              <label for="Day">Day</label><br>
-              <input type="number" id="siku" name="Day" min="1" max="31" required><br>
-              <p id="dvalidity"></p>
-              <label for="Month">Month</label><br>
-              <input type="number" id="Month" name="Month" min="1" max="12" required><br>
-              <p id="mvalidity"></p>
-              <label for="cc">Century(eg <strong>19</strong> ...,<strong>20</strong>...)</label><br>
-              <input type="number" id="cc" name="cc" min="0" required><br>
-              <label for="year">Year(eg ... <strong>96</strong>,...<strong>98</strong>)</label><br>
-              <input type="number" id="year" name="year" min="0" required>
-            </form>
-          </div>
+
               <br>
 
               <div class="results">
@@ -45,23 +31,25 @@
                 <p id="print_names_here">Possible Name</p>
               </div>
 
-                    <div class="Gender">
-                      <h5>Select Gender</h5>
-                      <form>
-                <div class="radio">
-                  <label><input type="radio" name="optradio">Male</label>
-                </div>
-                <div class="radio">
-                  <label><input type="radio" name="optradio">Female</label>
-                </div>
-                <div class="radio">
-                  <label><input type="radio" name="optradio">Others</label>
-                </div>
-                <br>
+              <div class="col-md-4">
 
-              </form>
-                <button onclick="myFunction()">Submit</button>
-                    </div>
+    <form action="#" onsubmit="deriveAkanName()">
+      <input class="form-control" id="siku" type="number" min="1" max="31" name="day" placeholder="Day" required/>
+      <p id="dvalidity"></p>
+      <input class="form-control" id="Month" type="number" min="1" max="12" name="month" placeholder="Month" required/>
+      <p id="mvalidity"></p>
+      <input class="form-control" type="number" min="1920" max="2019" name="year" placeholder="Year" required/>
+      <select class="form-control" id="gender" name="gender">
+        <option disabled selected>Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+    </form>
+    <button onclick="myFunction()">Submit</button>
+  </div>
+
+
         </div>
     </div>
   </body>
