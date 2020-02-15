@@ -47,3 +47,9 @@ h5
 {
   color: red;
 }
+.footer
+{
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
