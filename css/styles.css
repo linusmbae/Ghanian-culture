@@ -1,8 +1,17 @@
+/*class body starts*/
 body
 {
   background-repeat: no-repeat;
   background-size: 1300px;
 }
+h5
+{
+    margin-left: 390px;
+    font-style: oblique;
+    font-family: fantasy;
+}
+/* class body ends*/
+/* class jumbotron starts*/
 .jumbotron button
 {
   border-radius: 12px;
@@ -10,6 +19,8 @@ body
   font-size: 36px;
   border: 2px solid #4CAF50;
 }
+/* class jumbotron ends*/
+/* class results starts*/
 .results
 {
   margin-left: 600px;
@@ -18,15 +29,9 @@ body
   border-radius: 5px;
   text-align: center;
 }
+/* class ressults ends*/
 
-
-h5
-{
-    margin-left: 390px;
-    font-style: oblique;
-    font-family: fantasy;
-}
-
+/* class col-md-4 starts*/
 .col-md-4 form
 {
   margin-top: -150px;
@@ -47,9 +52,12 @@ h5
 {
   color: red;
 }
+/* class col-md-4 ends*/
+/* class footer starts*/
 .footer
 {
   background-color: white;
   text-align: center;
   border-radius: 10px;
 }
+/* class footer ends*/
