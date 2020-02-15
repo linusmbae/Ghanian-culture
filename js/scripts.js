@@ -1,7 +1,10 @@
+<!-- function starts -->
 function myFunction() {
+<!-- array starts -->
   let days = ["Wednesday","Thursday","Friday","Saturday","Sunday","Monday","Tuesday"];
   let maleAkanNames = ["Kwaku","Yaw","Kofi","Kwame","Kwasi","Kwadwo","Kwabena"];
   let femaleAkanNames = ["Akua","Yaa","Afua","Ama","Akosua","Adwoa","Abenaa"];
+<!-- array ends -->
 
   let male = document.getElementById("male");
   let female = document.getElementById("female");
@@ -19,7 +22,7 @@ function myFunction() {
       dayOfTheWeek = parseInt(dayOfTheWeek);
       dayOfBirth=parseInt(dayOfBirth);
 
-
+<!-- if starts -->
       if (dayOfTheWeek == 0 && female) {
           bornDay = days[0];
           akanName = femaleAkanNames[0];
@@ -76,7 +79,10 @@ function myFunction() {
           bornDay = days[6];
           akanName = maleAkanNames[6];
       }
+      <!-- if ends -->
+      <!-- display starts -->
       let resultDay = document.getElementById("print_day_here").innerHTML = " your birthday is on " + bornDay + "!"
       let resultName = document.getElementById("print_names_here").innerHTML =  "  your akan name is " + akanName + "!"
-
+      <!-- display ends -->
 };
+<!-- function ends -->
