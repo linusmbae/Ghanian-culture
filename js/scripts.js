@@ -1,7 +1,7 @@
 function myFunction() {
-  let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-  let maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-  let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  let days = ["Wednesday","Thursday","Friday","Saturday","Sunday","Monday","Tuesday"];
+  let maleAkanNames = ["Kwaku","Yaw","Kofi","Kwame","Kwasi","Kwadwo","Kwabena"];
+  let femaleAkanNames = ["Akua","Yaa","Afua","Ama","Akosua","Adwoa","Abenaa"];
 
   let male = document.getElementById("male");
   let female = document.getElementById("female");
