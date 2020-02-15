@@ -1,14 +1,19 @@
-
-
 function myFunction() {
-  let showday=document.getElementById("siku");
-  let showmonth=document.getElementById("Month");
-  let showcc=document.getElementById("cc");
-  let showyear=document.getElementById("year");
   let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-  let males = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-  let females = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  let maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+  let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
+  let male = document.getElementById("male");
+  let female = document.getElementById("female");
+  let dateOfBirth = document.getElementById("date").value
+
+  dateOfBirth = new Date(dateOfBirth);
+
+  let yearOfBirth = dateOfBirth.getFullYear();
+  let birthMonth = dateOfBirth.getMonth()+ 1;
+  let dayOfBirth = dateOfBirth.getDate () -1;
+  let CC = yearOfBirth.toString().substr(0, 2);
+  let YY = yearOfBirth.toString().substr(2, 2);
   let dayOfTheWeek = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (birthMonth + 1) / 10)) + dayOfBirth) % 7);
 
       dayOfTheWeek = parseInt(dayOfTheWeek);
@@ -71,8 +76,7 @@ function myFunction() {
           bornDay = days[6];
           akanName = maleAkanNames[6];
       }
-      let result = document.getElementById("print_day_here").innerHTML = "You Were Born on " + bornDay + ";
-
-      let result = document.getElementById("print_names_here").innerHTML = "your akan name is " + akanName + "!";
+      let resultDay = document.getElementById("print_day_here").innerHTML = " your birthday is on " + bornDay + "!"
+      let resultName = document.getElementById("print_names_here").innerHTML =  "  your akan name is " + akanName + "!"
 
 };

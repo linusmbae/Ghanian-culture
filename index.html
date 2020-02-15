@@ -33,21 +33,19 @@
 
               <div class="col-md-4">
 
-    <form action="#" onsubmit="myFunction()">
-      <input class="form-control" id="siku" type="number" min="1" max="31" name="day" placeholder="Day" required/>
-
-      <input class="form-control" id="Month" type="number" min="1" max="12" name="month" placeholder="Month" required/>
-    
-      <input class="form-control" type="number" min="0000" max="2050" name="year" placeholder="Year" required/>
+    <form>
+      <label for="Date">Date of Birth</label><br>
+     <input id="date" type="Date" required><br>
 
       <select class="form-control" id="gender" name="gender">
         <option disabled selected>Gender</option>
-        <option>Male</option>
-        <option>Female</option>
+        <option id="male">Male</option>
+        <option id="female">Female</option>
       </select>
 
-      <button>Submit</button>
     </form>
+
+          <button onclick="myFunction()">Submit</button>
   </div>
 
 
