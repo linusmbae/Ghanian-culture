@@ -61,3 +61,20 @@ h5
   border-radius: 10px;
 }
 /* class footer ends*/
+@media screen and (min-width:480px) and (max-width:769px)
+{
+.col-md-4 button
+{
+margin-left: 70px;
+margin-top: 10px;
+}
+.results
+{
+  margin-left: 0;
+  margin-top: 0px;
+}
+.col-md-4 form
+{
+  margin-top: 10px;
+}
+}
